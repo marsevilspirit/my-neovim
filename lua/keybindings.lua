@@ -16,4 +16,8 @@ map("n", "<C-d>", "9j", opt)
 -- 保存退出
 map("n", "wq", ":wq<CR>", opt)
 
+-- jk代替ESC
+map("i","jk","<ESC>",opt)
 
+-- <space>代替：进入命令模式
+map("n","<leader>",":",opt)
