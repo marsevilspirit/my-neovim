@@ -21,3 +21,5 @@ map("i","jk","<ESC>",opt)
 
 -- <space>代替：进入命令模式
 map("n","<leader>",":",opt)
+
+-- 
