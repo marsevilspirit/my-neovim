@@ -19,8 +19,6 @@ vim.bo.tabstop = 4
 vim.o.softtabstop = 4
 vim.o.shiftround = true
 -- >> << 时移动长度
-vim.o.shiftwidth = 2
-vim.bo.shiftwidth = 2
 -- 空格替代tab
 vim.o.expandtab = true
 vim.bo.expandtab = true
