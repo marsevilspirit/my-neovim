@@ -14,7 +14,7 @@ vim.wo.signcolumn = "yes"
 -- 右侧参考线，超过表示代码太长了，考虑换行
 -- vim.wo.colorcolumn = "80"
 -- 缩进4个空格等于一个Tab
-vim.o.tabstop = 4 
+vim.o.tabstop = 4
 vim.bo.tabstop = 4
 vim.o.softtabstop = 4
 vim.o.shiftround = true
