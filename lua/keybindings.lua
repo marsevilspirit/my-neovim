@@ -22,4 +22,5 @@ map("i","jk","<ESC>",opt)
 -- <space>代替：进入命令模式
 map("n","<leader>",":",opt)
 
--- 
+-- nvimTree Alt+m打开nvim-tree
+map('n', '<A-m>', ':NvimTreeToggle<CR>', opt)
