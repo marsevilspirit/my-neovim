@@ -22,4 +22,5 @@ vim.opt.termguicolors = true
 
 require("lazy").setup({{import = "plugins"}})
 
-
+-- colorscheme风格
+vim.cmd('colorscheme base16-snazzy')

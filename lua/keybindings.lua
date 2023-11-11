@@ -13,11 +13,11 @@ map("n", "<C-k>", "4k", opt)
 -- 保存退出
 map("n", "wq", ":wq<CR>", opt)
 
+-- 退出
+map("n","<leader>qq",":q<CR>",opt)
+
 -- jk代替ESC
 map("i","jk","<ESC>",opt)
-
--- <space>代替：进入命令模式
-map("n","<leader>",":",opt)
 
 -- nvimTree Alt+m打开nvim-tree
 map('n', '<A-m>', ':NvimTreeToggle<CR>', opt)
