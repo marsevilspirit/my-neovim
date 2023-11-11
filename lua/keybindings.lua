@@ -9,9 +9,6 @@ local opt = {noremap = true, silent = true }
 -- 上下滚动浏览
 map("n", "<C-j>", "4j", opt)
 map("n", "<C-k>", "4k", opt)
--- ctrl u / ctrl + d  只移动9行，默认移动半屏
-map("n", "<C-u>", "9k", opt)
-map("n", "<C-d>", "9j", opt)
 
 -- 保存退出
 map("n", "wq", ":wq<CR>", opt)
@@ -24,3 +21,7 @@ map("n","<leader>",":",opt)
 
 -- nvimTree Alt+m打开nvim-tree
 map('n', '<A-m>', ':NvimTreeToggle<CR>', opt)
+
+-- 切换标签页
+map("n", "<C-h>", ":BufferLineCyclePrev<CR>", opt)
+map("n", "<C-l>", ":BufferLineCycleNext<CR>", opt)
