@@ -17,6 +17,9 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+-- set termguicolors to enable highlight groups
 vim.opt.termguicolors = true
 
 require("lazy").setup({{import = "plugins"}})
+
+
