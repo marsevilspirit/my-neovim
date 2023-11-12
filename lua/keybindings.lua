@@ -10,8 +10,10 @@ local opt = {noremap = true, silent = true }
 map("n", "<C-j>", "4j", opt)
 map("n", "<C-k>", "4k", opt)
 
+-- 保存
+map("n","<leader>ww",":w<CR>",opt)
 -- 保存退出
-map("n", "wq", ":wq<CR>", opt)
+map("n", "<leader>wq", ":wq<CR>", opt)
 
 -- 退出
 map("n","<leader>qq",":q<CR>",opt)
@@ -25,3 +27,6 @@ map('n', '<A-m>', ':NvimTreeToggle<CR>', opt)
 -- 切换标签页
 map("n", "<C-h>", ":BufferLineCyclePrev<CR>", opt)
 map("n", "<C-l>", ":BufferLineCycleNext<CR>", opt)
+
+-- 格式化
+map("n","<leader>fm","gg=G",opt)
