@@ -75,7 +75,6 @@ vim.api.nvim_create_autocmd('LspAttach', {
                 end, opts)
         end,
 })
-
 -- Set up nvim-cmp.
 local cmp = require 'cmp'
 local has_words_before = function()
@@ -167,4 +166,6 @@ cmp.setup.cmdline(':', {
                 { name = 'cmdline' }
         })
 })
+
+
 
