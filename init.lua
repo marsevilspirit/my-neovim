@@ -29,7 +29,7 @@ vim.opt.rtp:prepend(lazypath)
 -- set termguicolors to enable highlight groups
 vim.opt.termguicolors = true
 
-require("lazy").setup({ { import = "plugins" } })
+require("lazy").setup("plugins")
 
 -- colorscheme风格
 vim.cmd('colorscheme base16-snazzy')
