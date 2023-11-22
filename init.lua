@@ -1,10 +1,8 @@
 vim.o.clipboard = "unnamedplus"
 -- 设置制表符宽度为 4
 vim.opt.tabstop = 4
-
 -- 设置每一级缩进的宽度为 4
 vim.opt.shiftwidth = 4
-
 -- 将制表符转换为空格
 vim.opt.expandtab = true
 
