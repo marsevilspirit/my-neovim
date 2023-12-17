@@ -7,8 +7,8 @@ local map = vim.api.nvim_set_keymap
 local opt = {noremap = true, silent = true }
 
 -- 上下滚动浏览
-map("n", "<C-j>", "4j", opt)
 map("n", "<C-k>", "4k", opt)
+map("n", "<C-j>", "4j", opt)
 
 -- 保存
 map("n","<leader>ww",":w<CR>",opt)
@@ -20,7 +20,6 @@ map("n","<leader>qq",":q<CR>",opt)
 
 -- jk代替ESC
 map("i","jk","<ESC>",opt)
-
 -- nvimTree Alt+m打开nvim-tree
 map('n', '<A-m>', ':NvimTreeToggle<CR>', opt)
 
