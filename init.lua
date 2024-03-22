@@ -49,6 +49,3 @@ require("lazy").setup("plugins")
 
 -- colorscheme风格
 vim.cmd('colorscheme base16-snazzy')
-
-
-

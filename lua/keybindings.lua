@@ -29,3 +29,5 @@ map("n", "<C-l>", ":BufferLineCycleNext<CR>", opt)
 
 -- 格式化
 map("n","<leader>fm","gg=G",opt)
+
+map("n", "q", "b", opt)

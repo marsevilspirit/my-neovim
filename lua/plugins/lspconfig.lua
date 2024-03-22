@@ -14,6 +14,9 @@ return {
         lspconfig.cmake.setup{
             capabilities = capabilities
         }
+         lspconfig.pyright.setup{
+            capabilities = capabilities
+        }
         -- Global mappings.
         -- See `:help vim.diagnostic.*` for documentation on any of the below functions
         vim.keymap.set('n', '<space>er', vim.diagnostic.open_float)
