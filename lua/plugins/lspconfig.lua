@@ -14,7 +14,10 @@ return {
         lspconfig.cmake.setup{
             capabilities = capabilities
         }
-         lspconfig.pyright.setup{
+        lspconfig.pyright.setup{
+            capabilities = capabilities
+        }
+        lspconfig.gopls.setup{
             capabilities = capabilities
         }
         -- Global mappings.
