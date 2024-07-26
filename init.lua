@@ -1,3 +1,4 @@
+-- 能向外复制粘贴
 vim.o.clipboard = "unnamedplus"
 -- 设置制表符宽度为 4
 vim.opt.tabstop = 4
