@@ -6,11 +6,29 @@ return {
     config = function()
         local lspconfig = require('lspconfig')
         lspconfig.lua_ls.setup {
-            capabilities = capabilities
+            capabilities = capabilities,
+            settings = {
+                Lua = {
+                    diagnostics = {
+                        globals = { 'vim' }
+                    },
+                    workspace = {
+                        library = {
+                            [vim.fn.expand('$VIMRUNTIME/lua')] = true,
+                            [vim.fn.expand('$VIMRUNTIME/lua/vim/lsp')] = true,
+                        }
+                    },
+                    telemetry = {
+                        enable = false
+                    },
+                },
+            },
         }
+
         lspconfig.clangd.setup {
             capabilities = capabilities
         }
+
         lspconfig.cmake.setup{
             capabilities = capabilities
         }
@@ -23,6 +41,7 @@ return {
         lspconfig.bashls.setup{
             capabilities = capabilities
         }
+
         -- Global mappings.
         -- See `:help vim.diagnostic.*` for documentation on any of the below functions
         vim.keymap.set('n', '<space>er', vim.diagnostic.open_float)

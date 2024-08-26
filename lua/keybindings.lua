@@ -18,6 +18,8 @@ map("n", "<leader>wq", ":wq<CR>", opt)
 -- 退出
 map("n","<leader>qq",":q<CR>",opt)
 
+map("n", "<leader>bd", ":bd<CR>", opt)
+
 -- jk代替ESC
 map("i","jk","<ESC>",opt)
 -- nvimTree Alt+m打开nvim-tree
