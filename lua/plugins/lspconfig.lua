@@ -25,10 +25,14 @@ return {
             },
         }
 
-        lspconfig.clangd.setup {
-            capabilities = capabilities
+        lspconfig.bufls.setup {
+            filetypes = { 'proto' },
+            capabilities = capabilities,
         }
-
+        lspconfig.clangd.setup {
+            filetypes = { 'c', 'cpp', 'objc', 'objcpp' },
+            capabilities = capabilities,
+        }
         lspconfig.cmake.setup{
             capabilities = capabilities
         }
@@ -39,6 +43,9 @@ return {
             capabilities = capabilities
         }
         lspconfig.bashls.setup{
+            capabilities = capabilities
+        }
+        lspconfig.rust_analyzer.setup{
             capabilities = capabilities
         }
 
