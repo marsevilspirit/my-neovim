@@ -1,3 +1,1 @@
-# my-neovim
-my neovim config
-该仓库已弃用, 配置转移到dotfile
+# 该仓库已弃用, 配置转移到[dotfile](https://github.com/marsevilspirit/dotfiles)
